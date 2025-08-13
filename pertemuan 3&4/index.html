@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+</head>
+<body>
+    
+    <h1>Pendaftaran Siswa Baru</h1>
+
+    <form action="" method="post" enctype="multipart/form-data" id="myForm" >
+        <label for="nama">nama lengkap:</label><br>
+        <input type="text" name="nama" id="nama" required><br>
+
+        <label for="email">email:</label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="kelas">Pilih Kelas:</label><br>
+        <select name="kelas" id="kelas" required>
+            <option value="" disabled selected>--Pilih Kelas--</option>
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+        </select><br><br>
+
+        <label for="kelas">Pilih Jurusan:</label><br>
+        <select name="kelas" id="kelas" required>
+            <option value="" disabled selected >--Pilih Jurusan--</option>
+            <option value="rpl">Rekayasa perangkat lunak</option>
+            <option value="akutansi">Akutansi</option>
+            <option value="dkv">Design Komunikasi Visual</option>
+        </select><br><br>
+
+        <label>Ekskul:</label><br>
+        <input type="checkbox" name="hobi[]" id="futsal"> Futsal
+        <input type="checkbox" name="hobi[]" id="basket"> Basket
+        <input type="checkbox" name="hobi[]" id="badminton"> Badminton <br><br>
+
+        <label for="foto">Upload Fot Siswa:</label><br>
+        <input type="file" name="foto" accept="image/*"><br><br>
+
+        <label for="deskripsi">Deskripsi minat & bakat: </label><br>
+        <textarea name="deskripsi" id="deskripsi" rows="4" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
